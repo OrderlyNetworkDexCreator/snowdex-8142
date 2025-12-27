@@ -1,94 +1,132 @@
 :root {
-  --oui-font-family: 'Manrope', sans-serif;
+  /* =========================
+     Typography
+     ========================= */
+  --oui-font-family: 'Fira Sans', sans-serif;
+  --oui-font-size-base: 14px;
 
-  /* colors */
-  --oui-color-primary: 176 132 233;
-  --oui-color-primary-light: 213 190 244;
-  --oui-color-primary-darken: 137 76 209;
-  --oui-color-primary-contrast: 255 255 255;
+  /* =========================
+     Global Atmosphere
+     ========================= */
+  /* Polar night → deep arctic */
+  --oui-color-fill: 11 22 38;        /* #0B1626 */
+  --oui-color-fill-active: 5 8 14;   /* #05080E */
 
-  --oui-color-link: 189 107 237;
-  --oui-color-link-light: 217 152 250;
+  /* =========================
+     Base Layers (Frosted Glass)
+     ========================= */
+  --oui-color-base-1: 42 55 78;
+  --oui-color-base-2: 36 48 68;
+  --oui-color-base-3: 30 41 60;
+  --oui-color-base-4: 26 36 54;
+  --oui-color-base-5: 22 31 47;
+  --oui-color-base-6: 18 26 40;
+  --oui-color-base-7: 15 22 34;
+  --oui-color-base-8: 12 18 28;
+  --oui-color-base-9: 9 14 22;
+  --oui-color-base-10: 6 10 18;
 
-  --oui-color-secondary: 255 255 255;
-  --oui-color-tertiary: 218 218 218;
-  --oui-color-quaternary: 218 218 218;
+  --oui-color-base-foreground: 235 240 248;
+  --oui-color-line: 255 255 255;
+
+  /* =========================
+     Primary (Ice-Blue Accents)
+     ========================= */
+  --oui-color-primary: 120 200 255;
+  --oui-color-primary-light: 180 225 255;
+  --oui-color-primary-darken: 80 160 220;
+  --oui-color-primary-contrast: 5 8 14;
+
+  --oui-color-link: 140 210 255;
+  --oui-color-link-light: 190 235 255;
+
+  /* =========================
+     Neutral UI
+     ========================= */
+  --oui-color-secondary: 235 240 248;
+  --oui-color-tertiary: 120 130 150;
+  --oui-color-quaternary: 90 100 120;
+
+  /* =========================
+     Trading Semantics (UNCHANGED)
+     ========================= */
+  --oui-color-trading-profit: 41 233 169;
+  --oui-color-trading-profit-contrast: 5 8 14;
+
+  --oui-color-trading-loss: 245 97 139;
+  --oui-color-trading-loss-contrast: 5 8 14;
+
+  /* =========================
+     Feedback
+     ========================= */
+  --oui-color-success: 41 233 169;
+  --oui-color-success-light: 101 240 194;
+  --oui-color-success-darken: 0 161 120;
+  --oui-color-success-contrast: 5 8 14;
 
   --oui-color-danger: 245 97 139;
   --oui-color-danger-light: 250 167 188;
   --oui-color-danger-darken: 237 72 122;
-  --oui-color-danger-contrast: 255 255 255;
-
-  --oui-color-success: 41 233 169;
-  --oui-color-success-light: 101 240 194;
-  --oui-color-success-darken: 0 161 120;
-  --oui-color-success-contrast: 255 255 255;
+  --oui-color-danger-contrast: 5 8 14;
 
   --oui-color-warning: 255 209 70;
   --oui-color-warning-light: 255 229 133;
   --oui-color-warning-darken: 255 152 0;
-  --oui-color-warning-contrast: 255 255 255;
+  --oui-color-warning-contrast: 5 8 14;
 
-  --oui-color-fill: 36 32 47;
-  --oui-color-fill-active: 40 46 58;
+  /* =========================
+     Gradients (Cold, Premium)
+     ========================= */
+  --oui-gradient-primary-start: 5 8 14;
+  --oui-gradient-primary-end: 120 200 255;
 
-  --oui-color-base-1: 93 83 123;
-  --oui-color-base-2: 81 72 107;
-  --oui-color-base-3: 68 61 69;
-  --oui-color-base-4: 57 52 74;
-  --oui-color-base-5: 51 46 66;
-  --oui-color-base-6: 43 38 56;
-  --oui-color-base-7: 36 32 47;
-  --oui-color-base-8: 29 26 38;
-  --oui-color-base-9: 22 20 28;
-  --oui-color-base-10: 14 13 18;
+  --oui-gradient-secondary-start: 15 22 34;
+  --oui-gradient-secondary-end: 80 160 220;
 
-  --oui-color-base-foreground: 255 255 255;
-  --oui-color-line: 255 255 255;
-
-  --oui-color-trading-loss: 245 97 139;
-  --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 41 233 169;
-  --oui-color-trading-profit-contrast: 255 255 255;
-
-  /* gradients */
-  --oui-gradient-primary-start: 40 0 97;
-  --oui-gradient-primary-end: 189 107 237;
-
-  --oui-gradient-secondary-start: 81 42 121;
-  --oui-gradient-secondary-end: 176 132 233;
-
-  --oui-gradient-success-start: 1 83 68;
-  --oui-gradient-success-end: 41 223 169;
+  --oui-gradient-success-start: 0 83 68;
+  --oui-gradient-success-end: 41 233 169;
 
   --oui-gradient-danger-start: 153 24 76;
   --oui-gradient-danger-end: 245 97 139;
 
-  --oui-gradient-brand-start: 231 219 249;
-  --oui-gradient-brand-end: 159 107 225;
-  --oui-gradient-brand-stop-start: 6.62%;
-  --oui-gradient-brand-stop-end: 86.5%;
-  --oui-gradient-brand-angle: 17.44deg;
+  --oui-gradient-neutral-start: 5 8 14;
+  --oui-gradient-neutral-end: 11 22 38;
 
-  --oui-gradient-warning-start: 152 58 8;
-  --oui-gradient-warning-end: 255 209 70;
-
-  --oui-gradient-neutral-start: 27 29 24;
-  --oui-gradient-neutral-end: 38 41 46;
-
-  /* rounded */
+  /* =========================
+     Rounded (Sharper, Colder)
+     ========================= */
   --oui-rounded-sm: 2px;
   --oui-rounded: 4px;
   --oui-rounded-md: 6px;
-  --oui-rounded-lg: 8px;
-  --oui-rounded-xl: 12px;
-  --oui-rounded-2xl: 16px;
+  --oui-rounded-lg: 6px;
+  --oui-rounded-xl: 10px;
+  --oui-rounded-2xl: 14px;
   --oui-rounded-full: 9999px;
 
-  /* spacing */
+  /* =========================
+     Spacing (UNCHANGED)
+     ========================= */
   --oui-spacing-xs: 20rem;
   --oui-spacing-sm: 22.5rem;
   --oui-spacing-md: 26.25rem;
   --oui-spacing-lg: 30rem;
   --oui-spacing-xl: 33.75rem;
+}
+
+/* =========================
+   Global Font Enforcement
+   ========================= */
+html, body {
+  font-family: 'Fira Sans', sans-serif !important;
+  font-size: 14px !important;
+}
+
+/* =========================
+   Orderly Container
+   ========================= */
+.orderly-app-container,
+.orderly-app-container *,
+.orderly-app-container *::before,
+.orderly-app-container *::after {
+  font-family: 'Fira Sans', sans-serif !important;
 }
