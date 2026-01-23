@@ -27,7 +27,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_TWITTER_URL": "https://x.com/BidexBNB",
   "VITE_SEO_SITE_NAME": "Bidex",
   "VITE_SEO_SITE_DESCRIPTION": "Perpetual DEX on BNB",
-  "VITE_SEO_SITE_URL": "https://snowdex.pro",
+  "VITE_SEO_SITE_URL": "https://bidexperps.pro",
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "@BidexBNB",
